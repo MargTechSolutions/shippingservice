@@ -1,5 +1,5 @@
 #To encrypt docker password- run this on terminal
-#echo "Takinglead007%" | openssl enc -aes-256-cbc -a -salt -pbkdf2 -pass pass:MySecretKey  > docker_pass.enc
+#echo "your_password" | openssl enc -aes-256-cbc -a -salt -pbkdf2 -pass pass:MySecretKey  > docker_pass.enc
 # nano .env    #add the MySecretKey
 # DOCKER_SECRET_KEY=MySecretKey
 # echo ".env" >> .gitignore   #add it to gitignore
